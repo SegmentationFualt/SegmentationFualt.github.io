@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"><style>body,html{height:100%;width:100%;font-family:Quicksand,sans-serif;font-weight:400;color:#000;margin:0;padding:0}.container{max-width:1200px;margin:0 auto;padding:0 20px}h1,h2,h3{font-weight:700}.code-editor{background-color:#edf0f3;padding:20px;border-radius:5px;margin-top:20px}#run-button{display:block;margin:20px auto;padding:10px 20px;font-size:1rem;background-color:#00529b;color:#fff;border:none;border-radius:3px;cursor:pointer}#run-button:hover{background-color:#002f5a}#output{margin-top:20px;font-size:1.25rem;color:red}</style><title>404 Page Not Found</title></head><body><div class="container"><h1>Error 404</h1><p>Oops! The page you're looking for doesn't exist.</p><div class="code-editor"><pre><code>function findPage(page) {
+    const validPages = ["index.html", "about.html", "contests.html"];
+    
+    if (validPages.includes(page)) {
+        return `Page found!`;
+    } else {
+        return `Error 404: Page not found.`;
+    }
+}</code></pre></div><button id="run-button">Run</button><p id="output"></p></div><script>document.getElementById("run-button").addEventListener("click",function(){document.getElementById("output").textContent="Error 404: Page not found."})</script></body></html>
