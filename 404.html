@@ -4,6 +4,6 @@
     if (validPages.includes(page)) {
         return `Page found!`;
     } else {
-        return `Error 404: Page not found.`;
+        window.location.href = "https://segmentationfualt.github.io/";
     }
-}</code></pre></div><button id="run-button">Run</button><p id="output"></p></div><script>document.getElementById("run-button").addEventListener("click",function(){document.getElementById("output").textContent="Error 404: Page not found."})</script></body></html>
+}</code></pre></div><button id="run-button">Run</button><p id="output"></p></div><script>document.getElementById("run-button").addEventListener("click",function(){window.location.href="https://segmentationfualt.github.io/"});</script></body></html>
